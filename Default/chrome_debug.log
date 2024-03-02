@@ -1,0 +1,4 @@
+[1226/141223.283446:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
+[1226/141224.071745:INFO:CONSOLE(287)] "%c%s color: red; background: yellow; font-size: 24px; WARNING!", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.en.4kogvgEoSZE.es5.O/am=P4GFZI4NgBgzyzl_zzg5DAAAAAAAQAAAsAawAw/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlHv_1cT1Z__VhsEu02LL5UIVQVf5Q/m=_b,_tp (287)
+[1226/141224.072362:INFO:CONSOLE(287)] "%c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you do not understand.", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.en.4kogvgEoSZE.es5.O/am=P4GFZI4NgBgzyzl_zzg5DAAAAAAAQAAAsAawAw/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlHv_1cT1Z__VhsEu02LL5UIVQVf5Q/m=_b,_tp (287)

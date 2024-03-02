@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Download and Delete Directory</title>
+</head>
+
+<body>
+    <h1>Download and Delete Directory</h1>
+    <form method="post">
+        <h2>Files and Folders:</h2>
+        <ul>
+            {% for dir in directories %}
+            <li><input type="checkbox" name="selected_items[]" value="{{ dir }}">{{ dir }}/</li>
+            {% endfor %}
+            {% for item in selected_items %}
+            <input type="checkbox" name="selected_items[]" value="{{ item }}">
+            {% endfor %}
+        </ul>
+        <input type="hidden" name="selected_items_dynamic" value="">
+        <input type="submit" name="download" value="Download Selected">
+        <input type="submit" name="delete" value="Delete Selected">
+    </form>
+</body>
+<script>
+    // Add a script to dynamically update the hidden input field
+    document.addEventListener('DOMContentLoaded', function () {
+        var checkboxes = document.querySelectorAll('input[name="selected_items[]"]');
+        var hiddenInput = document.querySelector('input[name="selected_items_dynamic"]');
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                var selectedItems = Array.from(checkboxes)
+                    .filter(function (checkbox) {
+                        return checkbox.checked;
+                    })
+                    .map(function (checkbox) {
+                        return checkbox.value;
+                    });
+
+                hiddenInput.value = JSON.stringify(selectedItems);
+            });
+        });
+    });
+</script>
+
+</html>

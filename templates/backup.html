@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download and Delete Directory</title>
+</head>
+<body>
+    <h1>Download and Delete Directory</h1>
+    <form method="post">
+        <h2>Files and Folders:</h2>
+        <ul>
+            {% for dir in directories %}
+                <li><input type="checkbox" name="selected_items[]" value="{{ dir }}">{{ dir }}/</li>
+            {% endfor %}
+
+            {% for file in files %}
+                <li><input type="checkbox" name="selected_items[]" value="{{ file }}">{{ file }}</li>
+            {% endfor %}
+        </ul>
+        <input type="submit" name="download" value="Download Selected">
+        <input type="submit" name="delete" value="Delete Selected">
+    </form>
+</body>
+</html>

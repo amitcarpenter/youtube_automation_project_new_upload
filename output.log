@@ -1,0 +1,7 @@
+nohup: ignoring input
+Number of documents Email: 0
+[]
+ * Serving Flask app 'youtube'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
